@@ -1,0 +1,74 @@
+.header {
+    background-color: pink;
+    height: 10vh;
+    width: auto;
+    text-align: center;
+}
+
+p {
+    margin: 0.1vh 1vw;
+}
+
+/* クイズ全体開始 */
+.main {
+    margin: 0 auto;
+    width: 60vw;
+}
+
+.quiz_wrapper {
+    width: 60vw;
+}
+
+#result {
+    font-size: 15vh;
+}
+
+.comment_for_previous {
+    width: 20vw;
+    margin: 0 auto;
+}
+
+.answer_comment .result {
+    height: 10vh;
+    margin: 0 auto;
+}
+
+
+
+.answer_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin: 0 auto;
+}
+
+.answer_wrapper button {}
+
+.question {
+    text-align: left;
+    padding-top: 5vh;
+}
+
+#answer_section {
+    align-items: center;
+}
+
+.answer_text {
+    text-align: center;
+}
+
+
+
+.answer_img .answer_text .answer_comment {
+    background-color: blueviolet;
+}
+
+.answer_img img {
+    width: 30vw;
+    height: auto;
+}
+
+#answer_section {
+    align-items: center;
+
+}

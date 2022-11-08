@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+
+
+    <!-- 全体 -->
+    <main>
+        <div>
+            <!-- 上段生成パート -->
+            <div class="upper_section">
+
+            </div>
+
+            <!-- 下段入力パート -->
+            <div class="lower_section">
+                <!-- 5音節入力パート -->
+                <div>
+                    <!-- 入力箇所 -->
+                    <div>
+
+                    </div>
+
+                    <!-- 入力済一覧 -->
+                    <div>
+
+                    </div>
+                </div>
+
+                <!-- 7音節入力パート -->
+                <div>
+                    <!-- 入力箇所 -->
+                    <div></div>
+
+                    <!-- 入力済一覧 -->
+                    <div></div>
+                </div>
+
+
+
+
+
+            </div>
+    </main>
+
+
+    <!-- JSここから -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        // 5文節の配列を作る
+        const five_sentences = [
+            "したたかに", "いつですか", "秘密基地", "永遠の", "青い薔薇"
+        ];
+
+        // 入力された内容を示す関数を作る
+
+        // 5文節の配列に追加をする
+        $(function () {
+            $("five_sentences_input_btn").on('click', function () {
+                five_sentences.push("入力された内容");
+            })
+        });
+
+
+    </script>
+    </body>
+
+</html>
