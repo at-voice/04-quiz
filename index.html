@@ -245,8 +245,19 @@
 
             // 次の問題の問題文と選択肢を表示する
             if (result.length < quiz.length) {
+                if (Number(e.target.value) === quiz[result.length].correct) {
+                    $("#result").text("⭕️");
+                    // 結果を配列に追加
+                    result.push("ok");
+                } else {
+                    $("#result").text("❌");
+                    // 結果を配列に追加
+                    result.push("ng");
+                }
+
+
                 // 問題文と選択肢を更新
-                $("#question_number").text("第" + (result.length + 1) + "問");
+                // $("#question_number").text("第" + (result.length + 1) + "問");
                 $("#question").text(quiz[result.length].question);//クイズの配列のn番目を表示する
                 console.log(quiz[result.length].question)
 
@@ -262,15 +273,7 @@
                 // ボタンを選んだあと、正解/不正解と次の問題＆選択肢、そして第n問の表記が更新されて欲しい
 
 
-                if (Number(e.target.value) === quiz[result.length].correct) {
-                    $("#result").text("⭕️");
-                    // 結果を配列に追加
-                    result.push("ok");
-                } else {
-                    $("#result").text("❌");
-                    // 結果を配列に追加
-                    result.push("ng");
-                }
+
 
 
             } else {
